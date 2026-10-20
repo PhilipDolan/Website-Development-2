@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>String Exercise 1</title>
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto;
+        }
+        
+        p {
+            border: solid black 1px;
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h1>String Exercise One</h1>
+    <p id="length"> </p>
+    <p id="firstChar"> </p>
+    <p id="lastChar"> </p>
+    <button>String Exercise 1</button>
+    <script>
+        const btn = document.querySelector('button');
+      //  const lnth = document.querySelector('#length')
+        const firstC = document.querySelector('#firstChar')
+        const lastC = document.querySelector('#lastChar')
+        
+        btn.addEventListener('click', (evt) => {
+
+            const name = prompt("please enter your name")
+            
+           document.querySelector('#length').innerHTML= `The length of your name(${name}) is ${name.length}`
+ 
+
+          //  lnth.innerHTML = `The length of your name(${name}) is ${name.length}`
+
+            // display the first character in name 
+            firstC.innerHTML = `The first character of your name(${name}) is ${name.charAt(0)}`
+
+            //display the last char in name
+            lastC.innerHTML = `The last character of your name(${name}) is ${name.charAt(name.length-1)}`
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <p></p>
+    <script>
+
+        let todos = ["study", "exercise", "cook"];
+        console.log(todos);
+        todos.push("relax", "sleep");
+        console.log(todos);
+        todos.unshift("wake up", "walk");
+        console.log(todos);
+        todos.pop();
+        console.log(todos);
+        todos.shift();
+        console.log(todos);
+        todos.splice(2, 1, "read");
+        console.log(todos);
+        todos.splice(2, 0, "meditate");
+        console.log(todos);
+        let para = document.querySelector('p');
+        para.insertAdjacentHTML('beforeend', `${todos.join(", ")}<br>`);
+
+        
+
+    </script>
+</body>
+
+</html>

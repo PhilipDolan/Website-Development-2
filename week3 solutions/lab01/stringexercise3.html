@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>String Exercise 3</title>
+    <style>
+        body {
+            width: 400px;
+            margin: 0 auto;
+        }
+        
+        p {
+            border: solid black 1px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>String Exercise Three</h1>
+    <p id="result"></p>
+    <button>String Exercise 3</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        result = document.querySelector('#result')
+        btn.addEventListener('click', (evt) => {
+            
+         let date = "2026-02-04";
+
+
+            let splitdate = date.split("-")
+            let year = splitdate[0]
+            let month = splitdate[1]
+            let day = splitdate[2]
+           // let overall = (CA1 * .2) + (CA2 * .3) + (exam * .5)
+
+            result.textContent = `  ${day} - ${month} - ${year}`
+
+        });
+    </script>
+    <!--
+let record = "Jane Doe:45:60:80"
+let splitRecord = record.split(":")
+let CA1=splitRecord[1]
+let CA2=splitRecord[2]
+let exam=splitRecord[3]
+let overall=(CA1*.2)+(CA2*.3)+(exam*.5)
+
+document.write(`${splitRecord[0]}: ${overall}`)
+	-->
+</body>
+
+</html>

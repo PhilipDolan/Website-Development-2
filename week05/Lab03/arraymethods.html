@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <h1>Array Methods</h1>
+    <p id="list1"></p>
+    <p id="list2"></p>
+    <p id="list3"></p>
+    <p id="list4"></p>
+    <script>
+        const numbers = [12, 5, 8, 130, 44, 2, 19];
+        document.querySelector('#list1').textContent = `Array elements: ${numbers.join(", ")}`;
+        
+        document.querySelector('#list2').textContent = `Numbers > 10: ${numbers.filter((num) => num > 10).join(", ")}`;
+
+        const doubled = (num) => num * 2;
+
+        document.querySelector('#list3').textContent = `Array values doubled: ${numbers.map(doubled).join(", ")}`;
+
+        document.querySelector('#list4').textContent = `Sorted array: ${numbers.sort((a, b) => a > b ? 1 : -1).join(", ")}`;
+        
+
+    </script>
+</body>
+
+</html>

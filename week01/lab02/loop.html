@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab Two Exercise Two</title>
+    </head>
+
+    <body>
+        <h1>For Loop</h1>
+        <p>Look in the console for output</p>
+        <script>
+            let average = 0;
+            let count = 0;  //Counts how many times the loop is run
+            let total = 0;
+            for(let x=2; x<=20; x+=2){
+                count+=1;   //Adds 1 to the counter
+                total+=x;   //Adds the values calculated by the loop together
+            }
+            average = total / count;
+            console.log(`Average: ${average}`);
+        </script>
+    </body>
+</html>
