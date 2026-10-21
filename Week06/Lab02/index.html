@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manipulate Objects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <h1>Manipulate Objects</h1>
+  <div id="container">
+    <table>
+    </table>
+    <button id="toggle">Add a Record</button>
+    <dialog>
+      <header class="modal__title">
+        <h1>Add a Car<span id="close"><i class="fa fa-close"></i></span></h1>
+      </header>
+      <form>
+        <div class="form-row">
+          <label for="reg">Registration Number</label>
+          <input type="text" name="reg" id="reg" autofocus required title="Please enter a valid Registration Number">
+        </div>
+
+        <div class="form-row">
+          <label for="make">Make</label>
+          <select name="make" id="make">
+            <option value="Ford">Ford</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Renault">Renault</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Tesla">Tesla</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="model">Model</label>
+          <select name="model" id="model">
+            <option value="Escort">Ford Escort</option>
+            <option value="Focus">Ford Focus</option>
+            <option value="Kona">Hyundai Kona</option>
+            <option value="Tucson">Hyundai Tucson</option>
+            <option value="Corolla">Toyota Corolla</option>
+            <option value="C-HR">Toyota C-HR</option>
+            <option value="Captur">Renault Captur</option>
+            <option value="Megane">Renault Megane</option>
+            <option value="Qashqai">Nissan Qashqai</option>
+            <option value="Juke">Nissan Juke</option>
+            <option value="Model 3">Tesla Model 3</option>
+            <option value="Model Y">Tesla Model 3</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="colour">Colour</label>
+          <input type="text" name="colour" id="colour" required title="Please enter a valid car Colour">
+        </div>
+
+        <button type="submit">Add a New Car</button>
+        <button type="reset">Clear the Info</button>
+      </form>
+
+    </dialog>
+
+
+  </div>
+  <script src="js/code2.js"></script>
+</body>
+
+</html>
