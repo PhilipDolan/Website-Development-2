@@ -9,5 +9,10 @@ const factorial = (field) => {
    return field
 }
 
-
-
+const input = document.querySelector('#num');
+    const result = document.querySelector('#factorial');
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (evt) => {
+      evt.preventDefault()
+      result.value = factorial(parseInt(input.value));
+    });

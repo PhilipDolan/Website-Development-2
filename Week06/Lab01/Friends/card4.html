@@ -74,12 +74,32 @@
         "image": "images/jenny.jpg",
         "joined": 2014,
         "job": "UX Designer",
-        "city": "Manhatten",
+        "city": "Manhattan",
         "mates": 30
       }
     ]
-	
 
+    const input = document.querySelector('#city');
+    const submit = document.querySelector('#submit');
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      for (const friend of friends) {
+        if (friend.city.toLowerCase() === input.value.toLowerCase()) {
+          const card = document.createElement('div');
+          card.classList.add('card');
+          card.innerHTML = `
+            <img src="${friend.image}" alt="${friend.name}">
+            <h2>${friend.fullname}</h2>
+            <p>Job: ${friend.job}</p>
+            <p>Joined: ${friend.joined}</p>
+            <p>City: ${friend.city}</p>
+            <p>Mates: ${friend.mates}</p>
+          `;
+          document.querySelector('.cards').appendChild(card);
+        }
+      }
+    });
   </script>
 </body>
 
