@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Array of Objects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>My Friend</h1>
+  <p></p>
+
+  <script>
+
+    const friend =
+    {
+      "name": "Stevie",
+      "fullname": "Stevie Feliciano",
+      "image": "images/stevie.jpg",
+      "joined": 2016,
+      "job": "Web Developer",
+      "city": "Boston",
+      "mates": 35
+    }
+
+
+    document.querySelector('p').insertAdjacentHTML('beforeend',
+      ` <h3>${friend.fullname}</h3>
+    <img src="${friend.image}" alt="${friend.name}" ><br>
+
+       <i>${friend.name}</i> is a <b>${friend.job}</b> in ${friend.city} and joined in ${friend.joined}
+	   <br><i class="fa fa-user"></i> ${friend.mates} Friends `)
+
+  </script>
+</body>
+
+</html>

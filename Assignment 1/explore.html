@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-ie">
+    <head>
+        <meta charset="utf-8">
+        <title>My Collection</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/explore.js" defer></script>
+        <script src="js/global.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Explore my Collection</h1>
+        <p class="date"></p>
+        <p class="time"></p>
+        <h2>Add a console</h2>
+        <form class="consoleMenu">
+            <div class="form-row">
+                <label for="enterBrand">Brand</label>
+                <input type="text" name="enterBrand" id="enterBrand" title="Please enter a brand">
+            </div>
+            <div class="form-row">
+                <label for="enterModel">Model</label>
+                <input type="text" name="enterModel" id="enterModel" title="Please enter a model">
+            </div>
+            <div class="form-row">
+                <label for="enterRelease">Release Date</label>
+                <input type="text" name="enterRelease" id="enterRelease" title="Please enter a release date">
+            </div>
+            <div class="form-row">
+                <label for="enterIsModded">Is it modded?</label>
+                <input type="checkbox" name="enterIsModded" id="enterIsModded" title="Is it modded?">
+            </div>
+            <div class="form-row">
+                <label for="enterGameCount">Number of games</label>
+                <input type="number" name="enterGameCount" id="enterGameCount" min="1">
+            </div>
+            <div class="form-row">
+                <label for="uploadImage">Upload an image</label>
+                <input type="file" name="uploadImage" id="uploadImage" accept="image/*">
+            </div>
+            <button type="submit">Add new console</button>
+            <button type="reset">Clear form</button>
+        </form>
+        <div class="cards"></div>
+    </body>
+</html>

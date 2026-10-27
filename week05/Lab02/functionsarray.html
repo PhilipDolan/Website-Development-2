@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Array (forEach())</title>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        const verifyAge = (age) => age >= 18 ? `Adult` : `Minor`;
+        let para = document.querySelector('p');
+
+        let friends = [
+            { 'name': 'Claire', 'age': 21 },
+            { 'name': 'Mairead', 'age': 18 },
+            { 'name': 'John', 'age': 16 },
+            { 'name': 'Elaine', 'age': 17 },
+            { 'name': 'Richard', 'age': 22 }
+        ]
+        friends.forEach(person => document.querySelector('p').insertAdjacentHTML('beforeend', `<b>${person.name}</b> - age ${person.age} is ${verifyAge(person.age)}<br>`));
+    </script>
+</body>
+
+</html>
